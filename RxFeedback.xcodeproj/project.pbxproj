@@ -29,6 +29,8 @@
 		C84645911EB775AF0008AD87 /* SystemError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84645901EB775AF0008AD87 /* SystemError.swift */; };
 		C84645931EB78D320008AD87 /* UILabel+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84645921EB78D320008AD87 /* UILabel+Extensions.swift */; };
 		C88BFC121F9782C100157318 /* ControlEvent+Signal.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88BFC111F9782C100157318 /* ControlEvent+Signal.swift */; };
+		C89296C220DC4A100070D51A /* RxTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C89296C020DC4A0F0070D51A /* RxTest.framework */; };
+		C89296C320DC4A100070D51A /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C89296C120DC4A100070D51A /* RxBlocking.framework */; };
 		C8996C6B1F40A7A0004E5D83 /* RxFeedbackDriverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8996C691F40A7A0004E5D83 /* RxFeedbackDriverTests.swift */; };
 		C8996C6D1F40A7C1004E5D83 /* RxFeedbackObservableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8996C6C1F40A7C1004E5D83 /* RxFeedbackObservableTests.swift */; };
 		C8996C7A1F40C5B6004E5D83 /* Deprecations.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8996C791F40C5B6004E5D83 /* Deprecations.swift */; };
@@ -304,6 +306,13 @@
 		C84645951EB794BC0008AD87 /* RxFeedback.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = RxFeedback.podspec; sourceTree = "<group>"; };
 		C88BFC111F9782C100157318 /* ControlEvent+Signal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ControlEvent+Signal.swift"; sourceTree = "<group>"; };
 		C88BFC131F97881A00157318 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		C89296C020DC4A0F0070D51A /* RxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RxTest.framework; sourceTree = "<group>"; };
+		C89296C120DC4A100070D51A /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RxBlocking.framework; sourceTree = "<group>"; };
+		C89296C420DC4A250070D51A /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RxBlocking.framework; sourceTree = "<group>"; };
+		C89296C520DC4A250070D51A /* RxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RxTest.framework; sourceTree = "<group>"; };
+		C89296C620DC4A380070D51A /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RxBlocking.framework; sourceTree = "<group>"; };
+		C89296C720DC4A380070D51A /* RxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RxTest.framework; sourceTree = "<group>"; };
+		C89296C820DC4A430070D51A /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RxBlocking.framework; sourceTree = "<group>"; };
 		C8996C671F40A7A0004E5D83 /* LinuxMain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinuxMain.swift; sourceTree = "<group>"; };
 		C8996C691F40A7A0004E5D83 /* RxFeedbackDriverTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxFeedbackDriverTests.swift; sourceTree = "<group>"; };
 		C8996C6C1F40A7C1004E5D83 /* RxFeedbackObservableTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxFeedbackObservableTests.swift; sourceTree = "<group>"; };
@@ -334,7 +343,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C89296C320DC4A100070D51A /* RxBlocking.framework in Frameworks */,
 				52D6D9871BEFF229002C0205 /* RxFeedback.framework in Frameworks */,
+				C89296C220DC4A100070D51A /* RxTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,6 +374,7 @@
 				C83B7C4F1EB7BA14003055E0 /* Build */,
 				C8996C661F40A7A0004E5D83 /* Tests */,
 				C834A8881EB67A8A00E6B15E /* Rx.xcodeproj */,
+				C89296AB20DC49400070D51A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -452,6 +464,8 @@
 		C83B7C501EB7BA14003055E0 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
+				C89296C120DC4A100070D51A /* RxBlocking.framework */,
+				C89296C020DC4A0F0070D51A /* RxTest.framework */,
 				C83B7C5B1EB7BA14003055E0 /* RxCocoa.framework */,
 				C83B7C5F1EB7BA14003055E0 /* RxSwift.framework */,
 			);
@@ -461,6 +475,8 @@
 		C83B7C631EB7BA14003055E0 /* Mac */ = {
 			isa = PBXGroup;
 			children = (
+				C89296C420DC4A250070D51A /* RxBlocking.framework */,
+				C89296C520DC4A250070D51A /* RxTest.framework */,
 				C83B7C661EB7BA14003055E0 /* RxCocoa.framework */,
 				C83B7C6A1EB7BA14003055E0 /* RxSwift.framework */,
 			);
@@ -470,6 +486,8 @@
 		C83B7C6E1EB7BA14003055E0 /* tvOS */ = {
 			isa = PBXGroup;
 			children = (
+				C89296C620DC4A380070D51A /* RxBlocking.framework */,
+				C89296C720DC4A380070D51A /* RxTest.framework */,
 				C83B7C751EB7BA14003055E0 /* RxCocoa.framework */,
 				C83B7C791EB7BA14003055E0 /* RxSwift.framework */,
 			);
@@ -479,10 +497,18 @@
 		C83B7C7D1EB7BA14003055E0 /* watchOS */ = {
 			isa = PBXGroup;
 			children = (
+				C89296C820DC4A430070D51A /* RxBlocking.framework */,
 				C83B7CCC1EB7BB41003055E0 /* RxSwift.framework */,
 				C83B7C841EB7BA14003055E0 /* RxCocoa.framework */,
 			);
 			path = watchOS;
+			sourceTree = "<group>";
+		};
+		C89296AB20DC49400070D51A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		C8996C661F40A7A0004E5D83 /* Tests */ = {
@@ -1185,6 +1211,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Tests/RxFeedbackTests/RxFeedbackTests.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.RxFeedback.RxFeedback-iOS-Tests";
@@ -1198,6 +1228,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Tests/RxFeedbackTests/RxFeedbackTests.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.RxFeedback.RxFeedback-iOS-Tests";
